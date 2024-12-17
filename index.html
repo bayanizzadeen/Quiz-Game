@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration page</title>
+  </head>
+
+  <body>
+    <article class="container">
+      <nav>
+        <img alt="" src="./images/rrr.jpg" class="imgNav" />
+      </nav>
+      <article class="container2">
+        <header>
+          <h1>Questions Game</h1>
+        </header>
+        <p>
+          The game consists of 10 random questions, each question is a multiple
+          choice. You have to answer the questions correctly, so that your name
+          will be on the list of people with the highest scores.
+        </p>
+        <article class="name">
+          <input
+            type="text"
+            id="FirstName"
+            name="First Name"
+            required
+            minlength="3"
+            maxlength="20"
+            placeholder="First Name"
+            pattern="^[a-zA-Z0-9]+$"
+          />
+          <input
+            type="text"
+            id="LastName"
+            name="Last Name"
+            required
+            minlength="3"
+            maxlength="20"
+            placeholder="Last Name"
+            pattern="^[a-zA-Z0-9]+$"
+          />
+        </article>
+        <button type="submit" onclick="submitRegister()">Start The Game</button>
+      </article>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
